@@ -21,6 +21,18 @@ Description :
 		this.sessionManagement = true;
 		this.sessionTimeout = createTimeSpan(0,0,30,0);
 		this.setClientCookies = true;
+
+		// ORM Settings
+		this.ormEnabled = true;
+		this.ormSettings = {
+			datasource = "cfsithmaster",
+			cfclocation = ["model", "modules"],
+			dbcreate = "none",
+			logSQL = true,
+			flushatrequestend = false,
+			eventHandling = true,
+			eventHandler = "model.EventHandler"
+		};
 	</cfscript>
 
 	<!--- COLDBOX STATIC PROPERTY, DO NOT CHANGE UNLESS THIS IS NOT THE ROOT OF YOUR COLDBOX APP --->

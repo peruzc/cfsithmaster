@@ -142,7 +142,9 @@ Optional Methods
 		interceptors = [
 			//Autowire
 			{class="coldbox.system.interceptors.Autowire",
-			 properties={}
+			 properties={
+			 	entityInjection = true
+			 }
 			},
 			//SES
 			{class="coldbox.system.interceptors.SES",

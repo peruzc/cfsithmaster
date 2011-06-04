@@ -2,9 +2,10 @@
 * A normal ColdBox Event Handler
 */
 component{
+	property name="userService" inject="entityService:User";
 
 	function index(event){
-		event.setView("home/index");
+		event.setValue("users", userService.get(1));
 	}
 
 }
