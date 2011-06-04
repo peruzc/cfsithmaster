@@ -54,7 +54,7 @@ Optional Methods
 			configAutoReload		= false,
 
 			//Implicit Events
-			defaultEvent			= "General.index",
+			defaultEvent			= "home.index",
 			requestStartHandler		= "Main.onRequestStart",
 			requestEndHandler		= "",
 			applicationStartHandler = "Main.onAppInit",
