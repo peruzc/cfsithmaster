@@ -12,6 +12,7 @@ component
 
 	// Properties
 	property name="shortName" ormtype="string";	property name="longName" ormtype="string";
+
 	// Constructor
 	function init(){
 		return this;

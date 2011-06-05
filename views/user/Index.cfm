@@ -1,1 +1,1 @@
-﻿<cfdump var="#event.getValue('users')#">s
+﻿<cfdump var="#event.getValue('users')#">
