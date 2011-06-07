@@ -7,9 +7,24 @@ handlers/UserType.cfc
 component
 	output="false"
 {
+	property name="ormService" inject="coldbox:plugin:ORMService";
+
 	function index(event)
 		output="false"
 	{
+		event.setValue("UserType", ormService.new("UserType"));
+	}
 
+	function create(event)
+		output="false"
+	{
+		var userType = ormService.new("UserType");
+		userType.setShortName("Admin");
+		userType.setLongName("Admin");
+
+		ormService.save(userType);
+
+		event.setValue("userType", userType);
+		event.setView("usertype/index");
 	}
 }

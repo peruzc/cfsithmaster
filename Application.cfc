@@ -26,8 +26,8 @@ Description :
 		this.ormEnabled = true;
 		this.ormSettings = {
 			datasource = "cfsithmaster",
-			cfclocation = ["model", "modules"],
-			dbcreate = "none",
+			cfclocation = ["model"],
+			dbcreate = "dropcreate",
 			logSQL = true,
 			flushatrequestend = false,
 			eventHandling = true,
